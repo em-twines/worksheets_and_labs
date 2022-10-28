@@ -53,4 +53,7 @@ customer_1.add_to_shopping_cart(popcorn)
 current_cart = customer_1.view_all_in_cart()
 result = customer_1.shopping_cart.calculate_total()
 print(result)
-# shopping_cart.empty_cart
+
+customer_1.shopping_cart.empty_cart()
+current_cart = customer_1.view_all_in_cart()
+

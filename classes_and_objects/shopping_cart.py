@@ -26,4 +26,5 @@ class Shopping_cart:
 
     def empty_cart(self):
         self.item_list.clear()
+        print("Cart Empty.")
 
