@@ -14,7 +14,7 @@ from alarm_clock import Alarm_clock
 
 alarm_clock = Alarm_clock("12:09", True, "14:00" )
 
-# alarm_clock.change_current_time()
+alarm_clock.change_current_time()
 
 alarm_clock.status = False
 
@@ -22,8 +22,8 @@ print(alarm_clock.status)
 
 
 '''
-in main.py
-    import customer and product classes and instantiate a customer as well as three products
+Shopping Cart
+        import customer and product classes and instantiate a customer as well as three products
         print customer name
         call customer's add product to shopping cart three times and add the three products you created
         call the customer's view products method
@@ -57,3 +57,31 @@ print(result)
 customer_1.shopping_cart.empty_cart()
 current_cart = customer_1.view_all_in_cart()
 
+
+
+
+'''
+Cell Phone:
+in main: 
+print all contacts
+send two messages through the receive text method
+print messages 
+call the create text method and create a message
+toggle to vibrate
+print the current ringer/vibrate setting
+'''
+
+
+from cell_phone import CellPhone
+
+my_phone = CellPhone("Razr", "(567)890-1234")
+
+print(my_phone.contacts)
+
+my_phone.receive_texts("Hello!")
+my_phone.receive_texts("It's a hot one, isn't it?")
+
+my_phone.send_messages("Hello Mom!", "Mom")
+
+my_phone.vibrate = True
+print (my_phone.vibrate)
